@@ -17,10 +17,10 @@ public class ScheduledService {
     private static final String THIRTY_SECONDS_IN_MILLISECONDS = "30000";
 
     //this cron expression was made in http://www.cronmaker.com/
-    @Scheduled(cron = "0 0/1 * 1/1 * ?")
-    public void printsDateTimeEveryMinuteUsingCronExpression(){
+    @Scheduled(cron = "0 0/2 * 1/1 * ?")
+    public void printsDateTimeEveryTwoMinutesUsingCronExpression(){
 
-        logger.info("Log every minute : " + LocalDateTime.now());
+        logger.info("Log every two minute : " + LocalDateTime.now());
     }
 
     //this cron expression was made in http://www.cronmaker.com/
