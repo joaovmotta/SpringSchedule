@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 
-@Service
+@Service()
 public class ScheduledService {
 
     private static final Logger logger = LoggerFactory.getLogger(ScheduledService.class);
@@ -39,7 +39,7 @@ public class ScheduledService {
     @Scheduled(fixedRateString = THIRTY_SECONDS_IN_MILLISECONDS)
     public void logWithAnInvertalOfThirthySeconds(){
 
-        logger.info("Log with an interval of thirthy seconds : " + LocalDateTime.now());
+        logger.info("Log with an interval of thirty seconds : " + LocalDateTime.now());
 
     }
 
